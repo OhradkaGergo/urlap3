@@ -7,11 +7,47 @@
     <title>Űrlap 3</title>
 
     <style>
-        input {
-            display: block
+        body {
+            margin: 100px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
         }
+
+        input {
+            margin: 10px;   
+        }
+
+        input[type=radio] {
+            border: 0px;
+            width: 25px;
+            height: 25px;
+        }
+
+        input[type=checkbox] {
+            border: 0px;
+            width: 25px;
+            height: 25px;
+        }
+
+        input[type=text],[type=email],[type=password],[type=date] {
+            width: 250px;
+            height: 25px;
+            font-size: medium;
+        }
+
         h1 {
-            text-align: center
+            text-align: center;
+        }
+
+        button {
+            margin-top: 20px;
+            float: right;
+            background-color: darkblue;
+            color: white;
+            font-size: medium;
+            padding: 10px;
+            border-color: darkblue;
+            border-radius: 25px;
         }
     </style>
 
@@ -45,25 +81,28 @@
         
             <div>
                 <label for="nev">E-Mail cím*</label>
-                <input type="text" name="nev" id="nev">
+                <input type="email" name="nev" id="nev">
                 <label for="nev">E-Mail cím ismételt megadása*</label>
-                <input type="text" name="nev" id="nev">
+                <input type="email" name="nev" id="nev">
+            </div>
+
+            <div>
                 <label for="nev">Jelszó*</label>
-                <input type="text" name="nev" id="nev">
+                <input type="password" name="nev" id="nev">
                 <label for="nev">Jelszó ismételt megadása*</label>
-                <input type="text" name="nev" id="nev">
+                <input type="password" name="nev" id="nev">
             </div>
                 
             <label for="">* - kötelező mezők</label>
         
             <div>
-                <input type="button" value="">
-                <label for="button">Tudomásul veszem és elfogadom az Általános Szerződési Feltételek-et, valamint az Adatkezelési tájékoztató-ban foglaltakat.*</label>
+                <input type="checkbox" value="">
+                <label for="checkbox">Tudomásul veszem és elfogadom az <u>Általános Szerződési Feltételek</u>-et, valamint az <u>Adatkezelési tájékoztató</u>-ban foglaltakat.*</label>
             </div>
         
             <div>
-                <input type="button" value="">
-                <label for="button">Szeretnék feliratkozni A dm Hírlevelem-re. A hírlevélről bármikor leiratkozhatok. A Hozzájárulás a dm hírlevélhez-t elolvastam és elfogadom.</label>
+                <input type="checkbox" value="">
+                <label for="checkbox">Szeretnék feliratkozni <b>A dm Hírlevelem</b>-re. A hírlevélről bármikor leiratkozhatok. A <u>Hozzájárulás a dm hírlevélhez</u>-t elolvastam és elfogadom.</label>
             </div>
         
             <div>
